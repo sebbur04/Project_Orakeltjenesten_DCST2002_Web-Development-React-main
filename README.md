@@ -37,10 +37,9 @@
 
 Objective:  Create a wiki page for Orakeltjenesten. 
 
-> [!NOTE]  
-> The wiki page follow the same guidlines as listed in the original project assignment listed on Blackboard.
->
->  Only the visual design of the website is adapted to Orakeltjenesten
+Visual design of the website is adapted to Orakeltjenesten
+
+For more information, visit the offical Orakeltjenesten website [Orakeltjenesten NTNU](https://i.ntnu.no/wiki/-/wiki/Norsk/orakeltjenesten)
 
 > [!NOTE]  
 > The webpage use the template from Client - server example from mandatory assignment 6 as main framework
