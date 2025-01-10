@@ -1,0 +1,662 @@
+/* Stylesheet for Orakeltjenesten */
+/* Note: Due to existing Bootstrap.min.css some commands in the CSS sheet may overwrite */
+
+
+
+
+/* General text fileds
+-----------------------------------------------------*/
+
+body {
+  margin:0px;
+  padding:0px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.blue-link{
+  text-decoration: none;
+}
+
+.blue-link:hover{
+  cursor:pointer;
+}
+
+
+/* index.tsx
+-----------------------------------------------------*/
+
+/* 
+TOP BAR 
+*/
+
+
+
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #0C1D37; 
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.form-control{
+  padding: 10x;
+  background-color: #f9f9f9; 
+  border: 2px solid #B3E5FC; 
+  border-radius: 4px;
+  color: #0C1D37; 
+}
+
+
+/*searchbar styling */
+.searchbar-container {
+  padding: 10px;
+}
+
+.searchbar-container .form-control {
+  width: 30vw;
+  padding: 10px;
+  background-color: #f9f9f9; 
+  border: 1px solid #B3E5FC; 
+  color: #0C1D37; 
+  border-radius: 4px;
+}
+
+.suggestions-list {
+  background-color: white;
+  width: 30vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #0C1D37; 
+  color: #0C1D37; 
+  max-height: 200px;
+  overflow-y: scroll;
+  position: absolute; 
+  z-index: 10; 
+}
+
+body.dark-mode .suggestions-list{
+  border:1px solid#B3E5FC;
+}
+
+.search-list {
+  padding: 10px;
+  color:#0C1D37;
+}
+
+body.dark-mode .search-list{
+  color:#B3E5FC;
+  background-color: #0C1D37;
+}
+
+.search-list:hover,
+body.dark-mode .search-list:hover {
+  background-color: #357ABD; 
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+.top-right-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.title {
+  padding: 25px;
+  font-size: 3em;
+  margin-top: -10px;
+  text-decoration: none;
+  color: #0C1D37; 
+}
+
+.top-container a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Dark Mode Button */
+.dark-mode-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: #4A90E2; 
+}
+
+.dark-mode-button:focus {
+  outline: none;
+}
+
+/* The entire page below TopBar, contains both Sidebar and Content */
+.page-container {
+  display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  font-size: x-large;
+  flex: 20%;
+  color: #0C1D37; 
+  text-decoration: none;
+}
+
+.mainContent {
+  flex: 80%;
+  align-items: center;
+  font-size: large;
+  background-color: #FFFFFF; 
+  color: #0C1D37; 
+}
+
+
+/* Source: https://stackoverflow.com/questions/2573544/how-can-i-select-all-children-of-an-element-except-the-last-child*/
+.useredit *:not(:last-child){
+  padding-bottom: 5px;
+}
+
+.page-content {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+
+
+
+/* buttons
+----------------------------------------------------------- */
+
+.login-button{
+  
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.15;
+    text-decoration: none;
+    border: 2px solid #B3E5FC; ;
+    border-radius: 50px;
+    background-color: #0C1D37; 
+    color: white; 
+}
+
+
+.login-button svg {
+  fill: white;
+}
+
+.btn-danger,
+.btn-light,
+.btn-success{
+  
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.15;
+  text-decoration: none;
+  border: 2px solid #0C1D37; ;
+  border-radius: 50px;
+  background-color: #f4fcff; 
+  color: #0C1D37;
+  margin:2px
+}
+
+
+
+.login-button:hover{
+  background-color: #a0caf5; 
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-success:hover,
+body.dark-mode .btn-success:hover {
+  background-color: #00974c; 
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-danger:hover,
+body.dark-mode .btn-danger:hover {
+  background-color: #e75252; 
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-light:hover,
+body.dark-mode .btn-light:hover{
+  background-color: #a0caf5; 
+  color: #0C1D37; 
+
+}
+
+
+/* dark mode
+--------------------------------- */
+body.dark-mode {
+  background-color: #0C1D37; 
+  color: #E1F5FE; 
+}
+
+/*Source: https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
+body.dark-mode .form-control::placeholder{
+  color:#2a69a3
+}
+
+body.dark-mode .searchbar-container,
+body.dark-mode .searchbar,
+body.dark-mode .inputbar,
+body.dark-mode .form-control,
+body.dark-mode .navbarstyle,
+body.dark-mode .mainContent,
+body.dark-mode .sidebar,
+body.dark-mode .card-body,
+body.dark-mode .whole-login-box,
+body.dark-mode .section-hero,
+body.dark-mode .whole-edit-box,
+body.dark-mode .comment-border,
+body.dark-mode .textarea,
+body.dark-mode select{
+  background-color: #0C1D37; 
+  color: #E1F5FE;
+  border-radius: 4px;
+}
+
+body.dark-mode .searchbar {
+  background-color: #0C1D37; 
+  color: #E1F5FE;
+}
+
+body.dark-mode .btn-danger,
+body.dark-mode .btn-light,
+body.dark-mode .btn-success{
+  
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.15;
+  text-decoration: none;
+  border: 2px solid #B3E5FC; ;
+  border-radius: 50px;
+  background-color: #0C1D37; 
+  color: #E1F5FE;
+
+}
+
+body.dark-mode .dark-mode-button {
+  color: #4A90E2; 
+}
+
+body.dark-mode .card {
+  border-color: #333; 
+}
+
+body.dark-mode .top-container {
+  background-color: #0C1D37; 
+  border-radius: 4px;
+}
+
+body.dark-mode .card-header,
+body.dark-mode .title a {
+  color: #E1F5FE; 
+}
+
+.title.dark-mode a {
+  text-decoration: none;
+  color: #E1F5FE; 
+}
+
+body.dark-mode .login-button:hover {
+  background-color: #a0caf5; 
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+body.dark-mode h1,
+body.dark-mode h3 {
+  color: #E1F5FE; 
+}
+
+/* login.tsx
+--------------------------------------------------- */
+
+.whole-login-box {
+  padding: 200px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #FFFFFF; 
+  color: #0C1D37;
+}
+
+.whole-login-box input {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  background-color: #E1F5FE; 
+  border: 1px solid #B3E5FC; 
+  color: #0C1D37; 
+  font-size:1.5em;
+}
+
+.center-login-button {
+  text-align: center;
+  padding: 50px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.center-login-button .btn-success,
+.center-login-button .btn-light,
+body.dark-mode .center-login-button .btn-light,
+body.dark-mode .center-login-button .btn-success{
+  font-size:1.5em;
+}
+
+/* edit.tsx
+--------------------------------------------------- */
+.edit-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.textarea{
+  width: 100%;
+  margin-top:15px;
+  margin-bottom:15px;
+  flex-basis: 100%;
+}
+
+
+/* profile.tsx 
+--------------------------------------------------- */
+
+/* Components: section-hero  */
+
+.own-profile-view{
+  text-align: left;
+}
+
+.section-hero {
+  padding: 125px 0;
+  text-align: center;
+  background-color: #E1F5FE; 
+  color: #0C1D37; 
+}
+
+.hero-title,
+.orakel-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #0C1D37; 
+}
+
+.hero-title-small {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #0C1D37; 
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 25px;
+  line-height: 1.7;
+  color: #0C1D37; 
+}
+
+
+
+.whole-edit-box {
+  display: flex;
+  flex-direction: row;
+  flex: 80%;
+  
+}
+
+
+/* version.tsx 
+--------------------------------------------------- */
+
+.bothVersions {
+  display: flex;
+  flex-direction: row;
+  width:100%; 
+}
+
+.currentVersion, 
+.compareVersion {
+  width:50%;
+  box-sizing: border-box;
+}
+
+/* tag.tsx
+--------------------------------------------------- */
+
+.tag-box-style{
+  font-size:1.5em;
+  text-decoration: none;
+}
+
+.edit-tag-container{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;}
+
+.edit-tag-container .form-control{
+  width:25vw;
+}
+
+.edit-tag-container .btn {
+  margin-left: 2vw;
+  width:5vw;
+}
+
+
+/*  page.tsx
+--------------------------------------------------- */
+
+.tags-flexbox{
+  display: flex;
+  flex-direction: row;
+}
+
+.tags-flexbox * {
+  margin-right: 2vw; /* tags on PC view get space between each other*/
+}
+
+.small-text-page-comment{
+  font-size:0.75em;
+  
+
+}
+
+/* comments on page.tsx */
+
+.comment-border{  
+  border-top: 1px solid gray; 
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+  
+.comment-border p {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.comment-image{
+  margin-top:20px;
+  max-width:50px;
+  height:auto;
+  border-radius: 50%;
+}
+
+
+
+/* profile.tsx
+--------------------------------------------------- */
+
+.imgstyle {
+  max-width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+Tablet / Mobile phone support via CSS media queries 
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 700px) {
+  .top-container {
+    flex-direction: row;
+    align-items: space-around;
+  }
+
+  .sidebar{
+    text-align: center;
+  }
+
+  /* Move sidebar to be downwars instead of size because of smaller screen */
+  .page-container {
+    flex-direction: column;
+  }
+
+  .whole-login-box {
+    padding: 100px;
+  }
+
+  
+
+  .center-login-button {
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding: 10px;
+    width: 100%; 
+    height: 20vh; 
+  }
+
+  .orakel-title{
+    font-size: 0.5em;
+    
+  }
+
+  /* .top-right-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  } */
+
+
+  /* make font smaller on mobile so it doesn't overlap with over text on same Card*/
+  .mainContent{
+    font-size:1em; 
+  }
+  
+
+  /* Styles for some of the text styles and title styles on subpages */
+
+  .section-hero {
+    padding: 50px 0;
+  }
+
+ 
+
+  .hero-text {
+    font-size: 20px;
+  }
+
+  .imgstyle {
+    max-width: 50%;
+  }
+
+  /* Remove searchbar if screen is too small  */
+  .searchbar-container .form-control {
+    display: none;
+  }
+
+
+/* login.tsx 
+-----------------------------------------------------*/
+
+.whole-login-box .form-control{
+  width:100%;
+}
+
+/* profile.tsx 
+-----------------------------------------------------*/
+.own-profile-view {
+  text-align: center;
+}
+
+/* page.tsx 
+-----------------------------------------------------*/
+.tags-flexbox{
+  display: flex;
+}
+
+.small-text-page-comment{
+  font-size: 0.8em;
+}
+
+
+
+/* tags.tsx
+---------------------------------------------------*/
+
+.tag-box-style{
+  font-size:1.5em;
+  text-decoration: none;
+}
+
+
+.edit-tag-container .form-control{
+  flex:100%;
+}
+
+.edit-tag-container .btn {
+flex: 10%;
+width:10vw;
+
+}
+
+/* version.tsx
+------------------------------------------------------ */
+
+.bothVersions{
+display:flex;
+flex-direction: column;
+}
+
+.currentVersion, .compareVersion {
+  width:100%;
+} 
+
+}

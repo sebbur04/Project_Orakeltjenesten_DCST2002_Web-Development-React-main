@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Version component tests Version renders correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <div
+    className="compare-section"
+  >
+    <Card
+      title=""
+    >
+      <Row>
+        <Column
+          width={3}
+        >
+          Sammenlign med  
+          <FormSelect
+            onChange={[Function]}
+            value={0}
+          />
+        </Column>
+        <Column
+          width={2}
+        >
+          <div>
+             Sammenlign 
+          </div>
+          <FormCheckbox
+            checked={false}
+            onChange={[Function]}
+          />
+        </Column>
+        <Column
+          width={3}
+        >
+          <ButtonDanger
+            onClick={[Function]}
+          >
+            Slett versjon 
+            1
+          </ButtonDanger>
+        </Column>
+        <Column
+          width={3}
+        >
+          <ButtonSuccess
+            onClick={[Function]}
+          >
+            Gjenopprett 
+            1
+             som nyeste
+          </ButtonSuccess>
+        </Column>
+      </Row>
+    </Card>
+    <div
+      className="bothVersions"
+    >
+      <div
+        className="currentVersion"
+      >
+        <Card
+          title=""" versjon 1"
+        />
+        <Card
+          title=""
+        >
+          <Row>
+            <Column
+              width={12}
+            >
+              <Qe />
+            </Column>
+          </Row>
+        </Card>
+      </div>
+      <div
+        className="compareVersion"
+      />
+    </div>
+  </div>
+</div>
+`;

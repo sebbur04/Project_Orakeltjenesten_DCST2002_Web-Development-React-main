@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users component tests Users renders correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <div
+    className="useredit"
+  >
+    <Card
+      title="Brukere"
+    >
+      <Row>
+        <Column>
+          <FormInput
+            onChange={[Function]}
+            placeholder="Søk etter bruker"
+            type="text"
+            value=""
+            width="40vw"
+          />
+        </Column>
+      </Row>
+      <Row
+        key="2"
+      >
+        <Qe>
+          ---
+        </Qe>
+        <Column
+          width={4}
+        >
+          <a
+            className="blue-link"
+            href="/#/users/2"
+          >
+            user1
+          </a>
+        </Column>
+        <Column
+          width={3}
+        >
+          <ButtonLight
+            onClick={[Function]}
+          >
+            Endre rettigheter
+          </ButtonLight>
+        </Column>
+        <Column
+          width={2}
+        >
+          <ButtonDanger
+            onClick={[Function]}
+          >
+            Slett bruker
+          </ButtonDanger>
+        </Column>
+      </Row>
+      <Row
+        key="3"
+      >
+        <Qe>
+          ---
+        </Qe>
+        <Column
+          width={4}
+        >
+          <a
+            className="blue-link"
+            href="/#/users/3"
+          >
+            user2
+          </a>
+        </Column>
+        <Column
+          width={3}
+        >
+          <ButtonLight
+            onClick={[Function]}
+          >
+            Endre rettigheter
+          </ButtonLight>
+        </Column>
+        <Column
+          width={2}
+        >
+          <ButtonDanger
+            onClick={[Function]}
+          >
+            Slett bruker
+          </ButtonDanger>
+        </Column>
+      </Row>
+    </Card>
+  </div>
+</div>
+`;

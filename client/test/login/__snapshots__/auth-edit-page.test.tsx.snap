@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edit Component Tests renders correctly and displays the page title and form fields (snapshot) 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title="Rediger side"
+  >
+    <Row>
+      <Column
+        width={1}
+      >
+        Tittel 
+      </Column>
+      <Column
+        width={2}
+      >
+        <FormInput
+          maxlength={25}
+          onChange={[Function]}
+          type="text"
+          value="Test Page"
+          width="50vw"
+        />
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <b>
+          Tagger
+        </b>
+      </Column>
+    </Row>
+    <Row
+      key="1"
+    >
+      <Column
+        width={3}
+      >
+        Tag1
+      </Column>
+      <Column
+        width={2}
+      >
+        <ButtonDanger
+          onClick={[Function]}
+        >
+          Fjern tagg
+        </ButtonDanger>
+      </Column>
+    </Row>
+    <Row>
+      <Column
+        width={3}
+      >
+        <FormSelect
+          onChange={[Function]}
+          value={2}
+        >
+          <option
+            key="2"
+            value={2}
+          >
+            Tag2
+          </option>
+        </FormSelect>
+      </Column>
+      <Column
+        width={2}
+      >
+        <ButtonSuccess
+          onClick={[Function]}
+        >
+          Legg til tagg
+        </ButtonSuccess>
+      </Column>
+    </Row>
+    <Row>
+      <Column
+        width={2}
+      >
+        Endringslogg:
+      </Column>
+      <Column
+        width={6}
+      >
+        <FormInput
+          onChange={[Function]}
+          placeholder="Skriv hva du har endret her"
+          type="text"
+          value=""
+          width="50vw"
+        />
+      </Column>
+    </Row>
+    <Row>
+      <Row>
+        <Column
+          width={2}
+        >
+          Generer lenke: 
+        </Column>
+        <Column>
+          <FormCheckbox
+            checked={false}
+            onChange={[Function]}
+          />
+        </Column>
+      </Row>
+      <Row>
+        <div
+          className="wide-textarea"
+        >
+          <textarea
+            className="textarea"
+            onChange={[Function]}
+            rows={10}
+            value="Sample content"
+          />
+        </div>
+      </Row>
+    </Row>
+    <Row>
+      <Column
+        width={7}
+      >
+        <ButtonDanger
+          onClick={[Function]}
+        >
+          Slett denne siden
+        </ButtonDanger>
+      </Column>
+      <Column
+        width={2}
+      >
+        <ButtonLight
+          onClick={[Function]}
+        >
+          Avbryt
+        </ButtonLight>
+      </Column>
+      <Column
+        width={2}
+      >
+        <ButtonSuccess
+          onClick={[Function]}
+        >
+          Lagre
+        </ButtonSuccess>
+      </Column>
+    </Row>
+  </Card>
+  <Card
+    title="Forhåndsvisning"
+  >
+    <Row>
+      <Qe>
+        ---
+      </Qe>
+    </Row>
+    <Row>
+      <Qe>
+        Sample content
+      </Qe>
+    </Row>
+  </Card>
+</div>
+`;

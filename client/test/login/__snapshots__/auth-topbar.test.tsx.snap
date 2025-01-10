@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopBar component tests TopBar renders correctly 1`] = `
+<div
+  className="top-container"
+>
+  <div
+    className="title"
+  >
+    <a
+      className="orakel-title"
+      href="/#/"
+    >
+      Orakeltjenesten
+    </a>
+  </div>
+  <SearchBar />
+  <div
+    className="top-right-container"
+  >
+    <DarkModeButton />
+    <div>
+      <ButtonLight
+        onClick={[Function]}
+      >
+        Profil
+      </ButtonLight>
+    </div>
+    <ButtonDanger
+      onClick={[Function]}
+    >
+      Logg ut
+    </ButtonDanger>
+  </div>
+</div>
+`;

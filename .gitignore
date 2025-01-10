@@ -1,0 +1,9 @@
+node_modules
+config.ts
+bundle.js
+bundle.js.map
+server/coverage
+server/var
+client/coverage
+db.ts
+.env

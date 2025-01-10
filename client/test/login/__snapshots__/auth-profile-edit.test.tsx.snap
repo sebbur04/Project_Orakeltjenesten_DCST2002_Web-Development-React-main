@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileEdit Component Tests Renders ProfileEdit form correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title="Brukeradministrasjon"
+  >
+    <div>
+      <h4
+        className="hero-title-small"
+      >
+        Personalisering
+      </h4>
+      <h6>
+        Bio 
+      </h6>
+      <FormTextarea
+        onChange={[Function]}
+        value="Bio"
+      />
+      <br />
+      <br />
+      <Row>
+        <p>
+          Velg profilbilde / avatar:
+        </p>
+        <Column
+          key="1"
+          width={1}
+        >
+          <div>
+            <FormCheckbox
+              checked={false}
+              id="avatar1"
+              name="avatar"
+              onChange={[Function]}
+            />
+            <img
+              alt="Avatar 1"
+              src="/user-avatars/img_avatar_1.png"
+              style={
+                {
+                  "height": "50px",
+                  "width": "50px",
+                }
+              }
+            />
+            <br />
+          </div>
+        </Column>
+        <Column
+          key="2"
+          width={1}
+        >
+          <div>
+            <FormCheckbox
+              checked={false}
+              id="avatar2"
+              name="avatar"
+              onChange={[Function]}
+            />
+            <img
+              alt="Avatar 2"
+              src="/user-avatars/img_avatar_2.png"
+              style={
+                {
+                  "height": "50px",
+                  "width": "50px",
+                }
+              }
+            />
+            <br />
+          </div>
+        </Column>
+        <Column
+          key="3"
+          width={1}
+        >
+          <div>
+            <FormCheckbox
+              checked={false}
+              id="avatar3"
+              name="avatar"
+              onChange={[Function]}
+            />
+            <img
+              alt="Avatar 3"
+              src="/user-avatars/img_avatar_3.png"
+              style={
+                {
+                  "height": "50px",
+                  "width": "50px",
+                }
+              }
+            />
+            <br />
+          </div>
+        </Column>
+        <Column
+          key="4"
+          width={1}
+        >
+          <div>
+            <FormCheckbox
+              checked={false}
+              id="avatar4"
+              name="avatar"
+              onChange={[Function]}
+            />
+            <img
+              alt="Avatar 4"
+              src="/user-avatars/img_avatar_4.png"
+              style={
+                {
+                  "height": "50px",
+                  "width": "50px",
+                }
+              }
+            />
+            <br />
+          </div>
+        </Column>
+        <Column
+          key="5"
+          width={1}
+        >
+          <div>
+            <FormCheckbox
+              checked={false}
+              id="avatar5"
+              name="avatar"
+              onChange={[Function]}
+            />
+            <img
+              alt="Avatar 5"
+              src="/user-avatars/img_avatar_5.png"
+              style={
+                {
+                  "height": "50px",
+                  "width": "50px",
+                }
+              }
+            />
+            <br />
+          </div>
+        </Column>
+      </Row>
+      <br />
+      <br />
+      <h3
+        className="hero-title-small"
+      >
+        Brukernavn og passord
+      </h3>
+      <form>
+        <h6>
+          Brukernavn
+        </h6>
+        <FormInput
+          aria-label="Username"
+          name="username"
+          onChange={[Function]}
+          placeholder="Nytt brukernavn"
+          type="text"
+          value=""
+          width="40vw"
+        />
+        <br />
+        <br />
+        <h6>
+          Passord
+        </h6>
+        <FormInput
+          aria-label="Password"
+          name="password1"
+          onChange={[Function]}
+          placeholder="Nytt passord"
+          type="password"
+          value=""
+          width="40vw"
+        />
+        <br />
+        <FormInput
+          aria-label="PasswordVerify"
+          name="password2"
+          onChange={[Function]}
+          placeholder="Gjenta passord"
+          type="password"
+          value=""
+          width="40vw"
+        />
+        <br />
+        <br />
+      </form>
+      <Row>
+        <Column
+          width={2}
+        >
+          <ButtonSuccess
+            onClick={[Function]}
+          >
+            Lagre endringer
+          </ButtonSuccess>
+        </Column>
+        <Column
+          width={1}
+        >
+          <ButtonDanger
+            onClick={[Function]}
+          >
+            Avbryt
+          </ButtonDanger>
+        </Column>
+      </Row>
+    </div>
+  </Card>
+</div>
+`;

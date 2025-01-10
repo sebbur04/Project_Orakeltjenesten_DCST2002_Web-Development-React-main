@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageContent Component Tests Renders PageContent correctly (snapshot) 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title="Test Page"
+  >
+    <Row>
+      <Column>
+        Tagger:
+      </Column>
+      <div
+        className="tags-flexbox"
+      >
+        <a
+          className="blue-link"
+          href="/#/tags/1"
+          key="1"
+        >
+          Tag1
+        </a>
+        <a
+          className="blue-link"
+          href="/#/tags/2"
+          key="2"
+        >
+          Tag2
+        </a>
+      </div>
+    </Row>
+    <div
+      className="page-content"
+    >
+      <Qe>
+        Sample content
+      </Qe>
+    </div>
+    <Row>
+      <Column
+        width={4}
+      >
+        Antall visninger: 
+        10
+      </Column>
+      <Column
+        width={4}
+      >
+        <a
+          className="blue-link"
+          href="/#/pages/1/versionlog"
+        >
+          Versjonslogg
+        </a>
+      </Column>
+      <Column
+        width={1}
+      >
+        <ButtonLight
+          onClick={[Function]}
+        >
+          Rediger
+        </ButtonLight>
+      </Column>
+    </Row>
+  </Card>
+  <Card
+    title="Kommentarer"
+  >
+    <div
+      className="comment-border"
+      key="1"
+    >
+      <Row>
+        <Row>
+          <Column
+            width={12}
+          >
+            <p>
+              <img
+                className="comment-image"
+                src="avatar.png"
+              />
+               
+              <a
+                className="blue-link"
+                href="/#/users/1"
+              >
+                User1
+              </a>
+            </p>
+          </Column>
+        </Row>
+        <Row>
+          <div
+            className="small-text-page-comment"
+          >
+            <Column
+              width={12}
+            >
+              2023-10-10 12:00
+            </Column>
+          </div>
+        </Row>
+        <Row>
+          <br />
+        </Row>
+         
+        <Row>
+          <Column
+            width={10}
+          >
+            <Row>
+              <div>
+                First comment
+              </div>
+            </Row>
+          </Column>
+          <Column
+            width={2}
+          >
+            <div>
+              <Column>
+                <ButtonLight
+                  onClick={[Function]}
+                >
+                  ✏️
+                </ButtonLight>
+              </Column>
+              <Column>
+                <ButtonDanger
+                  onClick={[Function]}
+                >
+                  X
+                </ButtonDanger>
+              </Column>
+            </div>
+          </Column>
+        </Row>
+      </Row>
+    </div>
+    <Row>
+      <div
+        className="comment-border"
+      >
+        <Column
+          width={9}
+        >
+          <FormTextarea
+            onChange={[Function]}
+            placeholder="Skriv en ny kommentar..."
+            rows={4}
+            value=""
+            width="70vw"
+          />
+        </Column>
+        <Column
+          width={1}
+        >
+          <ButtonSuccess
+            onClick={[Function]}
+          >
+            Kommenter
+          </ButtonSuccess>
+        </Column>
+      </div>
+    </Row>
+  </Card>
+</div>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserPermissions component tests UserPermissions renders correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <h3>
+    Mangler rettigheter
+  </h3>
+</div>
+`;

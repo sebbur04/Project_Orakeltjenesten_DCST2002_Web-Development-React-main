@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["jest", "node"],
+    "paths": {
+      "react-simplified": ["@types/react-simplified.d.ts"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": ["src", "test"]
+}

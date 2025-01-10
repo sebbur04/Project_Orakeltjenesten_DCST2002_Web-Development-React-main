@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VersionLog Component Tests Renders version logs correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title="Versjonslogg for "Test Page""
+  >
+    <Row
+      key="1"
+    >
+      <Qe>
+        ---
+      </Qe>
+      <Column
+        width={2}
+      >
+        <a
+          className="blue-link"
+          href="/#/pages/123/versionlog/1"
+        >
+          Versjon 1
+        </a>
+      </Column>
+      <Column
+        width={2}
+      >
+        Endret av: 
+        <a
+          className="blue-link"
+          href="/#/users/1"
+        >
+          user1
+        </a>
+      </Column>
+      <Column
+        width={3}
+      >
+        Dato: 2024-11-16 11:00
+      </Column>
+      <Column
+        width={5}
+      >
+        Logg: Initial creation
+      </Column>
+    </Row>
+    <Row
+      key="2"
+    >
+      <Qe>
+        ---
+      </Qe>
+      <Column
+        width={2}
+      >
+        <a
+          className="blue-link"
+          href="/#/pages/123/versionlog/2"
+        >
+          Versjon 2
+        </a>
+      </Column>
+      <Column
+        width={2}
+      >
+        Endret av: 
+        <a
+          className="blue-link"
+          href="/#/users/2"
+        >
+          user2
+        </a>
+      </Column>
+      <Column
+        width={3}
+      >
+        Dato: 2024-11-16 13:00
+      </Column>
+      <Column
+        width={5}
+      >
+        Logg: Updated content
+      </Column>
+    </Row>
+  </Card>
+</div>
+`;

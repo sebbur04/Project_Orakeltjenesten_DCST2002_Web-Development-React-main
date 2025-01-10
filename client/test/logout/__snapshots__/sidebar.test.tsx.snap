@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar Component Tests Renders basic navigation links correctly 1`] = `
+<div
+  className="sidebar"
+>
+  <Card
+    title=""
+  >
+    <Row>
+      <a
+        className="blue-link"
+        href="/#/"
+      >
+        Hjem
+      </a>
+      <Qe>
+        ---
+      </Qe>
+    </Row>
+    <Row>
+      <a
+        className="blue-link"
+        href="/#/allpages"
+        onClick={[Function]}
+      >
+        Alle sider
+      </a>
+    </Row>
+    <Row
+      key="1"
+    >
+      <Qe>
+        ---
+      </Qe>
+      <a
+        className="blue-link"
+        href="/#/tags/1"
+      >
+        Tag1
+      </a>
+    </Row>
+    <Row
+      key="2"
+    >
+      <Qe>
+        ---
+      </Qe>
+      <a
+        className="blue-link"
+        href="/#/tags/2"
+      >
+        Tag2
+      </a>
+    </Row>
+  </Card>
+</div>
+`;

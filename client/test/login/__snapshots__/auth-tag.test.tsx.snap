@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagComp component tests TagComp matches snapshot 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title=""
+  >
+    <div
+      className="tag-box-style"
+    >
+      <Row>
+        <div>
+          <Row>
+            <Column
+              width={4}
+            >
+              <h3 />
+            </Column>
+            <Column
+              width={4}
+            >
+              <ButtonLight
+                onClick={[Function]}
+              >
+                Endre tag
+              </ButtonLight>
+            </Column>
+          </Row>
+        </div>
+      </Row>
+      <Row />
+      <Row>
+        <Column>
+          Antall sider: 0
+        </Column>
+      </Row>
+    </div>
+  </Card>
+</div>
+`;

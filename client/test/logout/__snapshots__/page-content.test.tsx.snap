@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageContent Component Tests Displays comments correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title="Sample Page"
+  >
+    <Row>
+      <Column
+        width={12}
+      >
+        Tagger:
+      </Column>
+      <Column
+        key="1"
+        width={1}
+      >
+        <div
+          className="small-text-page-comment"
+        >
+          <a
+            className="blue-link"
+            href="/#/tags/1"
+          >
+            Tag1
+          </a>
+        </div>
+      </Column>
+      <Column
+        key="2"
+        width={1}
+      >
+        <div
+          className="small-text-page-comment"
+        >
+          <a
+            className="blue-link"
+            href="/#/tags/2"
+          >
+            Tag2
+          </a>
+        </div>
+      </Column>
+    </Row>
+    <div
+      className="page-content"
+    >
+      <Qe>
+        ## Sample Content
+      </Qe>
+    </div>
+    <Row>
+      <Column
+        width={4}
+      >
+        Antall visninger: 
+        123
+      </Column>
+      <Column
+        width={4}
+      >
+        <a
+          className="blue-link"
+          href="/#/pages/1/versionlog"
+        >
+          Versjonslogg
+        </a>
+      </Column>
+    </Row>
+  </Card>
+  <Card
+    title="Kommentarer"
+  >
+    <div
+      className="comment-border"
+      key="1"
+    >
+      <Row>
+        <Row>
+          <Column>
+            <p>
+               
+              <a
+                className="blue-link"
+                href="/#/users/1"
+              >
+                JohnDoe
+              </a>
+            </p>
+          </Column>
+          <Column>
+            <img
+              className="imgstyle"
+              src=""
+            />
+          </Column>
+        </Row>
+        <Row>
+          <div
+            className="small-text-page-comment"
+          >
+            <Column
+              width={12}
+            >
+              2024-01-01 13:30
+            </Column>
+          </div>
+        </Row>
+        <Row>
+          <br />
+        </Row>
+         
+        <Row
+          key="1"
+        >
+          <Column
+            width={10}
+          >
+            Great post!
+          </Column>
+        </Row>
+      </Row>
+    </div>
+    <div
+      className="comment-border"
+      key="2"
+    >
+      <Row>
+        <Row>
+          <Column>
+            <p>
+               
+              <a
+                className="blue-link"
+                href="/#/users/2"
+              >
+                JaneSmith
+              </a>
+            </p>
+          </Column>
+          <Column>
+            <img
+              className="imgstyle"
+              src=""
+            />
+          </Column>
+        </Row>
+        <Row>
+          <div
+            className="small-text-page-comment"
+          >
+            <Column
+              width={12}
+            >
+              2024-01-01 14:00
+            </Column>
+          </div>
+        </Row>
+        <Row>
+          <br />
+        </Row>
+         
+        <Row
+          key="2"
+        >
+          <Column
+            width={10}
+          >
+            Needs more details.
+          </Column>
+        </Row>
+      </Row>
+    </div>
+  </Card>
+</div>
+`;
+
+exports[`PageContent Component Tests Renders page information correctly 1`] = `
+<div
+  className="mainContent"
+>
+  <Card
+    title="Sample Page"
+  >
+    <Row>
+      <Column
+        width={12}
+      >
+        Tagger:
+      </Column>
+      <Column
+        key="1"
+        width={1}
+      >
+        <div
+          className="small-text-page-comment"
+        >
+          <a
+            className="blue-link"
+            href="/#/tags/1"
+          >
+            Tag1
+          </a>
+        </div>
+      </Column>
+      <Column
+        key="2"
+        width={1}
+      >
+        <div
+          className="small-text-page-comment"
+        >
+          <a
+            className="blue-link"
+            href="/#/tags/2"
+          >
+            Tag2
+          </a>
+        </div>
+      </Column>
+    </Row>
+    <div
+      className="page-content"
+    >
+      <Qe>
+        ## Sample Content
+      </Qe>
+    </div>
+    <Row>
+      <Column
+        width={4}
+      >
+        Antall visninger: 
+        123
+      </Column>
+      <Column
+        width={4}
+      >
+        <a
+          className="blue-link"
+          href="/#/pages/1/versionlog"
+        >
+          Versjonslogg
+        </a>
+      </Column>
+    </Row>
+  </Card>
+  <Card
+    title="Kommentarer"
+  >
+    <div
+      className="comment-border"
+      key="1"
+    >
+      <Row>
+        <Row>
+          <Column>
+            <p>
+               
+              <a
+                className="blue-link"
+                href="/#/users/1"
+              >
+                JohnDoe
+              </a>
+            </p>
+          </Column>
+          <Column>
+            <img
+              className="imgstyle"
+              src=""
+            />
+          </Column>
+        </Row>
+        <Row>
+          <div
+            className="small-text-page-comment"
+          >
+            <Column
+              width={12}
+            >
+              2024-01-01 13:30
+            </Column>
+          </div>
+        </Row>
+        <Row>
+          <br />
+        </Row>
+         
+        <Row
+          key="1"
+        >
+          <Column
+            width={10}
+          >
+            Great post!
+          </Column>
+        </Row>
+      </Row>
+    </div>
+    <div
+      className="comment-border"
+      key="2"
+    >
+      <Row>
+        <Row>
+          <Column>
+            <p>
+               
+              <a
+                className="blue-link"
+                href="/#/users/2"
+              >
+                JaneSmith
+              </a>
+            </p>
+          </Column>
+          <Column>
+            <img
+              className="imgstyle"
+              src=""
+            />
+          </Column>
+        </Row>
+        <Row>
+          <div
+            className="small-text-page-comment"
+          >
+            <Column
+              width={12}
+            >
+              2024-01-01 14:00
+            </Column>
+          </div>
+        </Row>
+        <Row>
+          <br />
+        </Row>
+         
+        <Row
+          key="2"
+        >
+          <Column
+            width={10}
+          >
+            Needs more details.
+          </Column>
+        </Row>
+      </Row>
+    </div>
+  </Card>
+</div>
+`;

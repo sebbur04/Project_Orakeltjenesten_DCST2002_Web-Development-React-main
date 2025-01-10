@@ -1,0 +1,145 @@
+# Used to automatically run tests on server when making a pull request to main. Inspiration and help from earlier project https://github.com/mateos03/nettside_souto, https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions, also has some help from chatGPT for setting up the mysql db. Tried using the same setup as the løsningsforslag, but for some reason mariadb did no work with me.
+
+name: Run Tests with MySQL
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  server-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8
+        env:
+          MYSQL_ROOT_PASSWORD: test
+          MYSQL_DATABASE: testdb
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install Dependencies
+        working-directory: ./server
+        run: npm install
+
+      - name: Make config.ts file
+        run: touch ./server/test/config.ts
+
+      - name: Wait for MySQL to be ready
+        run: |
+          until mysql -h 127.0.0.1 -P 3306 -u root -ptest -e "SELECT 1"; do
+            echo "Waiting for MySQL to be ready..."
+            sleep 5
+          done
+
+      - name: Set Up Test Database Schema
+        run: |
+          # Create the tables without inserting any test data
+          mysql -h 127.0.0.1 -P 3306 -u root -ptest testdb <<EOF
+          CREATE TABLE IF NOT EXISTS Pages (
+              id INT NOT NULL AUTO_INCREMENT,
+              name TEXT,
+              num_views INT,
+              PRIMARY KEY(id)
+          );
+
+          CREATE TABLE IF NOT EXISTS Versionlog (
+              id INT NOT NULL AUTO_INCREMENT,
+              pageid INT NOT NULL,
+              name TEXT,
+              content TEXT,
+              userid INT,
+              date DATETIME,
+              changelog TEXT,
+              version INT,
+              PRIMARY KEY(id)
+          );
+
+          CREATE TABLE IF NOT EXISTS Users (
+              id INT NOT NULL AUTO_INCREMENT,
+              username TEXT,
+              hashed_password BLOB,
+              salt BLOB,
+              avatar TEXT,
+              bio TEXT,
+              permid INT NOT NULL,
+              PRIMARY KEY(id)
+          );
+
+          CREATE TABLE IF NOT EXISTS Comments (
+              id INT NOT NULL AUTO_INCREMENT,
+              userid INT,
+              date DATETIME,
+              pageid INT,
+              content TEXT,
+              PRIMARY KEY(id)
+          );
+
+          CREATE TABLE IF NOT EXISTS Tags (
+              id INT NOT NULL AUTO_INCREMENT,
+              name TEXT,
+              PRIMARY KEY(id)
+          );
+
+          CREATE TABLE IF NOT EXISTS PageTags (
+              pageid INT NOT NULL,
+              tagid INT NOT NULL,
+              PRIMARY KEY(pageid, tagid)
+          );
+
+          CREATE TABLE IF NOT EXISTS Permissions (
+              id INT NOT NULL AUTO_INCREMENT,
+              userid INT,
+              alterpages BOOLEAN,
+              deletepages BOOLEAN,
+              versions BOOLEAN,
+              allcomments BOOLEAN,
+              tags BOOLEAN,
+              users BOOLEAN,
+              PRIMARY KEY(id)
+          );
+          EOF
+          
+      - name: Run Tests
+        working-directory: ./server
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_USER: root
+          MYSQL_PASSWORD: test
+          MYSQL_DATABASE: testdb
+        run: npm test
+  
+  client-tests:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install Dependencies
+        working-directory: ./client
+        run: npm install
+
+      - name: Run tests
+        working-directory: ./client
+        #Updates the snapshots used for testing
+        run: npm test -- -u
+        #Needed because of warnings from the tests
+        continue-on-error: true
