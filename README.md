@@ -27,15 +27,11 @@
 - [Reference list / Kilder](#reference-list--kilder)
 
 ## Group Members
-* Mateo Souto
-
-* Sebastian Ellefsen Burmo
-
-* Sondre Søndergaard
-
-* Felix Krogvold
-
-* Akshit Dutta
+* [Mateo Souto](https://github.com/mateos03)
+* [Sebastian Ellefsen Burmo](https://github.com/sebbur04)
+* [Sondre Søndergaard](https://github.com/sonson-arch)
+* [Felix Krogvold](https://github.com/felkro124)
+* [Akshit Dutta](https://github.com/akshitd)
 
 
 # Project - NTNU Orakeltjenesten Wiki
