@@ -11,8 +11,6 @@
 
 ## Table of contents
 
-- [DCST2002 - Web Development - Project - Group 12](#dcst2002---web-development---project---group-12)
-   * [Group Members](#group-members)
 - [Project - NTNU Orakeltjenesten Wiki](#project---ntnu-orakeltjenesten-wiki)
    * [About the project](#about-the-project)
       + [List of webpage functionality](#list-of-webpage-functionality)
@@ -26,7 +24,7 @@
 - [How to use our website](#how-to-use-our-website---orakeltjenesten)
 - [Reference list / Kilder](#reference-list--kilder)
 
-## Group Members
+## Contributors
 * [Mateo Souto](https://github.com/mateos03)
 * [Sebastian Ellefsen Burmo](https://github.com/sebbur04)
 * [Sondre Søndergaard](https://github.com/sonson-arch)
